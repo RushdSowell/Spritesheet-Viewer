@@ -40,18 +40,18 @@ class Spritesheet_Viewer:
 		
 		################################
 		#Storing images
-		self.IMAGE = {"Add Button Normal": pygame.transform.rotozoom(pygame.image.load("Addition_button_unhover.png"),0,0.25),
-				"Add Button Hovered":pygame.transform.rotozoom(pygame.image.load("Addition_button_hover.png"),0,0.25),
-				"Add Button Clicked":pygame.transform.rotozoom(pygame.image.load("Addition_button_clicked.png"),0,0.25),
-				"Browse Button Normal": pygame.transform.rotozoom(pygame.image.load("Browse_button_unhover.png"),0,0.25),
-				"Browse Button Hovered": pygame.transform.rotozoom(pygame.image.load("Browse_button_hover.png"),0,0.25),
-				"Browse Button Clicked": pygame.transform.rotozoom(pygame.image.load("Browse_button_clicked.png"),0,0.25),
-				"OK Button Normal": pygame.transform.rotozoom(pygame.image.load("OK_button_unhover.png"),0,0.25),
-				"OK Button Hovered": pygame.transform.rotozoom(pygame.image.load("OK_button_hover.png"),0,0.25),
-				"OK Button Clicked": pygame.transform.rotozoom(pygame.image.load("OK_button_clicked.png"),0,0.25),
-				"Cancel Button Normal": pygame.transform.rotozoom(pygame.image.load("Cancel_button_unhover.png"),0,0.25),
-				"Cancel Button Hovered": pygame.transform.rotozoom(pygame.image.load("Cancel_button_hover.png"),0,0.25),
-				"Cancel Button Clicked": pygame.transform.rotozoom(pygame.image.load("Cancel_button_clicked.png"),0,0.25)}
+		self.IMAGE = {"Add Button Normal": pygame.transform.rotozoom(pygame.image.load("Buttons/Addition_button_unhover.png"),0,0.25),
+				"Add Button Hovered":pygame.transform.rotozoom(pygame.image.load("Buttons/Addition_button_hover.png"),0,0.25),
+				"Add Button Clicked":pygame.transform.rotozoom(pygame.image.load("Buttons/Addition_button_clicked.png"),0,0.25),
+				"Browse Button Normal": pygame.transform.rotozoom(pygame.image.load("Buttons/Browse_button_unhover.png"),0,0.25),
+				"Browse Button Hovered": pygame.transform.rotozoom(pygame.image.load("Buttons/Browse_button_hover.png"),0,0.25),
+				"Browse Button Clicked": pygame.transform.rotozoom(pygame.image.load("Buttons/Browse_button_clicked.png"),0,0.25),
+				"OK Button Normal": pygame.transform.rotozoom(pygame.image.load("Buttons/OK_button_unhover.png"),0,0.25),
+				"OK Button Hovered": pygame.transform.rotozoom(pygame.image.load("Buttons/OK_button_hover.png"),0,0.25),
+				"OK Button Clicked": pygame.transform.rotozoom(pygame.image.load("Buttons/OK_button_clicked.png"),0,0.25),
+				"Cancel Button Normal": pygame.transform.rotozoom(pygame.image.load("Buttons/Cancel_button_unhover.png"),0,0.25),
+				"Cancel Button Hovered": pygame.transform.rotozoom(pygame.image.load("Buttons/Cancel_button_hover.png"),0,0.25),
+				"Cancel Button Clicked": pygame.transform.rotozoom(pygame.image.load("Buttons/Cancel_button_clicked.png"),0,0.25)}
 		
 		#We'll have also new row and newcolumn buttons
 		self.Buttons_list = [[First_buttons(self.IMAGE["Add Button Hovered"], self.IMAGE["Add Button Normal"], self.IMAGE["Add Button Clicked"], "First Button")]]
@@ -60,9 +60,9 @@ class Spritesheet_Viewer:
 		self.Buttons_list[0][0].Set_Rect(20,20)
 		####################################
 		#Some fonts
-		self.menu_fonts = pygame.font.Font('Comfortaa-Regular.ttf', 20)
-		self.menu_fonts_addMinus = pygame.font.Font('Comfortaa-Regular.ttf', 40)
-		self.menu_fonts_addMinus_clicked = pygame.font.Font('Comfortaa-Regular.ttf', 30)
+		self.menu_fonts = pygame.font.Font('Fonts/Comfortaa-Regular.ttf', 20)
+		self.menu_fonts_addMinus = pygame.font.Font('Fonts/Comfortaa-Regular.ttf', 40)
+		self.menu_fonts_addMinus_clicked = pygame.font.Font('Fonts/Comfortaa-Regular.ttf', 30)
 		###################################
 		#Backgound color
 		self.BackgroundColor = WHITE
